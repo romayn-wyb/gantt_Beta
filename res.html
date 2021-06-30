@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./powergantt.css" rel="stylesheet">
+    <link href="https://lib.baomitu.com/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="http://cdn.staticfile.org/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="./powergantt.js"></script>
+    <style>
+
+    </style>
+
+</head>
+
+<body>
+    <div id="gantt1" class="gantt">
+    </div>
+</body>
+
+</html>
+<script>
+    var powerGantt = new powerGantt(document.getElementById("gantt1"), {
+        type: "resources"
+    });
+    let columns = [{
+            field: "name",
+            text: "人员",
+            width: "180px"
+        },
+        {
+            field: "levelName",
+            text: "资源等级"
+        },
+        {
+            field: "duration",
+            text: "总工时"
+        }
+    ]
+    powerGantt.setColumn(columns);
+    $.ajax({
+        url: "./resources.json",
+        success: function (res) {
+            powerGantt.setData(res);
+        }
+    })
+</script>

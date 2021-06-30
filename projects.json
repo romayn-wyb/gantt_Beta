@@ -1,0 +1,66 @@
+[{
+    "id": "1",
+    "projectName": "北洋传媒2014上半年报",
+    "duration": "80",
+    "tasks": [{
+            "id": "1",
+            "start_date": "2014-05-01",
+            "end_date": "2014-05-06",
+            "name": "任务一",
+            "resources": []
+        },
+        {
+            "id": "2",
+            "start_date": "2014-05-06",
+            "end_date": "2014-05-15",
+            "name": "任务二",
+            "resources": []
+        },
+        {
+            "id": "3",
+            "start_date": "2014-05-02",
+            "end_date": "2014-05-20",
+            "name": "任务三",
+            "resources": [{
+                    "id": "ce0a75af-9333-4ae6-892e-0167c93a21fb",
+                    "name": "吴蓉"
+                },
+                {
+                    "id": "59409246-708f-4454-a980-01feebf7a044",
+                    "name": "严飘亮"
+                }
+            ]
+        }
+    ]
+}, {
+    "id": "2",
+    "projectName": "北洋传媒2014年报",
+    "duration": "80",
+    "tasks": [{
+            "id": "4",
+            "start_date": "2014-05-01",
+            "end_date": "2014-07-01",
+            "name": "任务一",
+            "resources": []
+        },
+        {
+            "id": "5",
+            "start_date": "2014-08-01",
+            "end_date": "2014-10-01",
+            "name": "任务二",
+            "resources": [{
+                "id": "ce0a75af-9333-4ae6-892e-0167c93a21fb",
+                "name": "吴蓉"
+            }]
+        },
+        {
+            "id": "6",
+            "start_date": "2014-11-01",
+            "end_date": "2014-12-01",
+            "name": "任务三",
+            "resources": [
+
+            ]
+        }
+    ]
+}]

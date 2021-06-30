@@ -11,7 +11,15 @@
     <script src="./monent.js"></script>
     <script src="./powergantt/powergantt.js"></script>
     <style>
-       
+        html,body{
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .gantt{
+            height: 100%;
+        }
     </style>
 
 </head>
@@ -27,7 +35,7 @@
     let columns = [{
             field: "projectName",
             text: "项目名",
-            width: "180px"
+            width: 180
         },
         {
             field: "duration",
@@ -36,7 +44,7 @@
     ]
     powerGantt.setColumn(columns);
     $.ajax({
-        url: "./projects.json",
+        url: "./powergantt/projects.json",
         success: function (res) {
             powerGantt.setData(res);
         }

@@ -53,6 +53,7 @@ powerGantt.prototype.init = function () {
 
 
 powerGantt.prototype.scrollToNow = function () {
+    return
     //render完滚动到活动试图
     let days = moment().add(-7, 'day').diff(this.startDate, 'days');
     this.ganttViewBody.scrollLeft = days * this.config.scaleDefautWidth;
@@ -267,7 +268,6 @@ powerGantt.prototype.renderGanttBody = function () {
     let ganttTask = this.renderGanttTask();
     this.ganttView.children[1].appendChild(ganttTask)
 
-  
 
 
 }
